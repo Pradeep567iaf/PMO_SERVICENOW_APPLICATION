@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_data_policy_rule">
+    <sys_data_policy_rule action="INSERT_OR_UPDATE">
+        <disabled>true</disabled>
+        <field>number</field>
+        <mandatory>ignore</mandatory>
+        <sys_class_name>sys_data_policy_rule</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-09-16 10:33:20</sys_created_on>
+        <sys_data_policy display_value="">5fe0e76bc32cda10604bf9477d0131d0</sys_data_policy>
+        <sys_id>71212f6bc32cda10604bf9477d0131a4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>number</sys_name>
+        <sys_package display_value="PROJECT MANAGEMENT OFFICE" source="x_1318454_pmo">53d55eabc364da10604bf9477d013119</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="PROJECT MANAGEMENT OFFICE">53d55eabc364da10604bf9477d013119</sys_scope>
+        <sys_update_name>sys_data_policy_rule_71212f6bc32cda10604bf9477d0131a4</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-09-16 10:33:20</sys_updated_on>
+        <table>x_1318454_pmo_task</table>
+    </sys_data_policy_rule>
+</record_update>
