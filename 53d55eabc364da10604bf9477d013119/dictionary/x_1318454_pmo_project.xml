@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="792e5eafc3a4da10604bf9477d0131b0" label="Project" max_length="40" name="x_1318454_pmo_project" type="collection">
+        <element label="Project Manager" max_length="32" name="project_manager" reference="sys_user" type="reference"/>
+        <element choice="3" default="created" label="Status" max_length="40" name="status" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="In Progress" value="in_progress"/>
+                <element inactive_on_update="false" label="Closed" value="closed"/>
+                <element inactive_on_update="false" label="Waiting For Approval" value="approval"/>
+                <element inactive_on_update="false" label="Created" value="created"/>
+                <element inactive_on_update="false" label="Cancelled" value="cancelled"/>
+                <element inactive_on_update="false" label="Completed" value="completed"/>
+            </choice>
+        </element>
+        <element label="Description" max_length="40" name="description" type="string"/>
+        <element label="Actual Cost" max_length="40" name="actual_cost" type="float"/>
+        <element label="Start Date" max_length="40" name="start_date" type="glide_date"/>
+        <element label="End Date" max_length="40" name="end_date" type="glide_date"/>
+        <element label="Budget" max_length="40" name="budget" type="float"/>
+        <element label="Name" max_length="40" name="name" type="string"/>
+        <element calculation="(function calculatedFieldValue(current) {&#13;&#10;&#13;&#10;&#9;// Add your code here&#13;&#10;&#9;return '';  // return the calculated value&#13;&#10;&#13;&#10;})(current);" label="Project Number" mandatory="true" max_length="40" name="project_number" read_only="true" type="string"/>
+        <index name="index">
+            <element name="project_manager"/>
+        </index>
+    </element>
+</database>
