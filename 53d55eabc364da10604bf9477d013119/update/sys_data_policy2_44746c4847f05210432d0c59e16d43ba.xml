@@ -4,27 +4,27 @@
         <apply_import_set>true</apply_import_set>
         <apply_soap>true</apply_soap>
         <conditions/>
-        <description>Make Task number field manadatory </description>
+        <description>This Data Policy is used to make Form feild Mandatory when creating form.</description>
         <enforce_ui>true</enforce_ui>
         <inherit>false</inherit>
         <model_id/>
-        <model_table>x_1318454_pmo_task</model_table>
+        <model_table>x_1318454_pmo_project</model_table>
         <reverse_if_false>true</reverse_if_false>
-        <short_description/>
+        <short_description>Form Validation</short_description>
         <sys_class_name>sys_data_policy2</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2024-09-16 10:32:30</sys_created_on>
+        <sys_created_on>2024-09-17 10:07:47</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
-        <sys_id>5fe0e76bc32cda10604bf9477d0131d0</sys_id>
+        <sys_id>44746c4847f05210432d0c59e16d43ba</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>Form Validation</sys_name>
         <sys_overrides/>
         <sys_package display_value="PROJECT MANAGEMENT OFFICE" source="x_1318454_pmo">53d55eabc364da10604bf9477d013119</sys_package>
         <sys_policy/>
         <sys_scope display_value="PROJECT MANAGEMENT OFFICE">53d55eabc364da10604bf9477d013119</sys_scope>
-        <sys_update_name>sys_data_policy2_5fe0e76bc32cda10604bf9477d0131d0</sys_update_name>
+        <sys_update_name>sys_data_policy2_44746c4847f05210432d0c59e16d43ba</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-09-16 10:32:30</sys_updated_on>
+        <sys_updated_on>2024-09-17 10:07:47</sys_updated_on>
     </sys_data_policy2>
 </record_update>

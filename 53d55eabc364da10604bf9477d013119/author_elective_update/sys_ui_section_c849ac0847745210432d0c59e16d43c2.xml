@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_section action="DELETE" caption="New Section" section_id="c849ac0847745210432d0c59e16d43c2" sys_domain="global" table="x_1318454_pmo_project" version="3" view="">
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>description</element>
+            <position>0</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2024-09-17 10:26:11</sys_created_on>
+            <sys_id>9849ac0847745210432d0c59e16d43f4</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="New Section" display_value="New Section" name="x_1318454_pmo_project" sys_domain="global" view="Default view">c849ac0847745210432d0c59e16d43c2</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2024-09-17 10:26:11</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_section action="DELETE">
+            <caption>New Section</caption>
+            <header>false</header>
+            <name>x_1318454_pmo_project</name>
+            <roles/>
+            <sys_class_name>sys_ui_section</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2024-09-17 10:26:10</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>c849ac0847745210432d0c59e16d43c2</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_1318454_pmo_project</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="PROJECT MANAGEMENT OFFICE" source="x_1318454_pmo">53d55eabc364da10604bf9477d013119</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="PROJECT MANAGEMENT OFFICE">53d55eabc364da10604bf9477d013119</sys_scope>
+            <sys_update_name>sys_ui_section_c849ac0847745210432d0c59e16d43c2</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2024-09-17 10:26:10</sys_updated_on>
+            <sys_user/>
+            <title>false</title>
+            <view display_value="Default view" name="NULL">Default view</view>
+            <view_name/>
+        </sys_ui_section>
+    </sys_ui_section>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="PROJECT MANAGEMENT OFFICE">53d55eabc364da10604bf9477d013119</application>
+        <file_path/>
+        <instance_id>0b24ed9f1b6ab514ba5ceb9b2d4bcb36</instance_id>
+        <instance_name>dev220367</instance_name>
+        <name>sys_ui_section_c849ac0847745210432d0c59e16d43c2</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_ui_section caption="New Section" section_id="c849ac0847745210432d0c59e16d43c2" sys_domain="global" table="x_1318454_pmo_project" version="3" view=""><sys_ui_element action="INSERT_OR_UPDATE"><element>description</element><position>0</position><sys_created_by>admin</sys_created_by><sys_created_on>2024-09-17 10:26:11</sys_created_on><sys_id>9849ac0847745210432d0c59e16d43f4</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="New Section" display_value="New Section" name="x_1318454_pmo_project" sys_domain="global" view="Default view">c849ac0847745210432d0c59e16d43c2</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2024-09-17 10:26:11</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_section action="INSERT_OR_UPDATE"><caption>New Section</caption><header>false</header><name>x_1318454_pmo_project</name><roles/><sys_class_name>sys_ui_section</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2024-09-17 10:26:10</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>c849ac0847745210432d0c59e16d43c2</sys_id><sys_mod_count>0</sys_mod_count><sys_name>x_1318454_pmo_project</sys_name><sys_overrides/><sys_package display_value="PROJECT MANAGEMENT OFFICE" source="x_1318454_pmo">53d55eabc364da10604bf9477d013119</sys_package><sys_policy/><sys_scope display_value="PROJECT MANAGEMENT OFFICE">53d55eabc364da10604bf9477d013119</sys_scope><sys_update_name>sys_ui_section_c849ac0847745210432d0c59e16d43c2</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2024-09-17 10:26:10</sys_updated_on><sys_user/><title>false</title><view display_value="Default view" name="NULL">Default view</view><view_name/></sys_ui_section></sys_ui_section></record_update>]]></payload>
+        <payload_hash>-1045774611</payload_hash>
+        <record_name>Project</record_name>
+        <reverted_from/>
+        <source>eacae3f347e01210432d0c59e16d4379</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-09-17 10:26:11</sys_created_on>
+        <sys_id>1849ac0847745210432d0c59e16d43f6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>191ff84aec50000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-09-17 10:26:11</sys_updated_on>
+        <type>Form Layout</type>
+        <update_guid>9c49ac08627452105269efd0916031f5</update_guid>
+        <update_guid_history>9c49ac08627452105269efd0916031f5:-1045774611</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-09-17 10:27:33</sys_created_on>
+        <sys_db_object display_value="" name="sys_ui_section">sys_ui_section</sys_db_object>
+        <sys_id>781facc3c67c4d8a9be4b3c1e2f3fc84</sys_id>
+        <sys_metadata>c849ac0847745210432d0c59e16d43c2</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>New Section</sys_name>
+        <sys_package display_value="PROJECT MANAGEMENT OFFICE" source="x_1318454_pmo">53d55eabc364da10604bf9477d013119</sys_package>
+        <sys_parent display_value="Project">792e5eafc3a4da10604bf9477d0131b0</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="PROJECT MANAGEMENT OFFICE">53d55eabc364da10604bf9477d013119</sys_scope>
+        <sys_scope_delete display_value="">008fbbffdf014ae980567bd4b379e0f1</sys_scope_delete>
+        <sys_update_name>sys_ui_section_c849ac0847745210432d0c59e16d43c2</sys_update_name>
+        <sys_update_version display_value="sys_ui_section_c849ac0847745210432d0c59e16d43c2">1849ac0847745210432d0c59e16d43f6</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-09-17 10:27:33</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
