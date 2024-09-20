@@ -28,20 +28,6 @@
             <sys_updated_by>admin</sys_updated_by>
             <sys_updated_on>2024-09-16 10:05:16</sys_updated_on>
         </sys_ui_form_section>
-        <sys_ui_form_section action="INSERT_OR_UPDATE">
-            <position>2</position>
-            <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2024-09-16 10:29:59</sys_created_on>
-            <sys_domain>global</sys_domain>
-            <sys_domain_path>/</sys_domain_path>
-            <sys_id>1680af2bc32cda10604bf9477d0131ae</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_overrides/>
-            <sys_ui_form display_value="x_1318454_pmo_task" name="x_1318454_pmo_task" sys_domain="global" view="Default view">90ea5763c32cda10604bf9477d01318f</sys_ui_form>
-            <sys_ui_section caption="Task Decription" display_value="Task Decription" name="x_1318454_pmo_task" sys_domain="global" view="Default view">de80af2bc32cda10604bf9477d0131aa</sys_ui_section>
-            <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2024-09-16 10:29:59</sys_updated_on>
-        </sys_ui_form_section>
         <sys_ui_form action="INSERT_OR_UPDATE">
             <name>x_1318454_pmo_task</name>
             <roles/>
