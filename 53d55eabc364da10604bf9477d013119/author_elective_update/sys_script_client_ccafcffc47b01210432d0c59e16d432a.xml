@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script_client">
+    <sys_script_client action="DELETE">
+        <active>false</active>
+        <applies_extended>false</applies_extended>
+        <condition/>
+        <description/>
+        <field/>
+        <global>true</global>
+        <isolate_script>true</isolate_script>
+        <messages/>
+        <name>Set Related Project Feild  Value on load</name>
+        <order/>
+        <script><![CDATA[function onLoad() {
+	g_form.addInfoMessage("client script")
+
+	// alert(g_scratchpad.desc);
+    // Check if g_scratchpad.desc is defined
+    // if (g_scratchpad.desc) {
+    //     // Set the value on the task form, assuming you have a field to display it
+	// 	alert('hello ' + g_scratchpad.desc);
+    //     g_form.setValue('description_field_on_task', g_scratchpad.desc); 
+        
+    //     // Or simply alert the value for debugging
+    //     alert('Description from Project: ' + g_scratchpad.desc);
+    // } else {
+    //     console.log('g_scratchpad.desc is undefined');
+    // }
+}
+]]></script>
+        <sys_class_name>sys_script_client</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-09-20 06:29:51</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>ccafcffc47b01210432d0c59e16d432a</sys_id>
+        <sys_mod_count>56</sys_mod_count>
+        <sys_name>Set Related Project Feild  Value on load</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="PROJECT MANAGEMENT OFFICE" source="x_1318454_pmo">53d55eabc364da10604bf9477d013119</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="PROJECT MANAGEMENT OFFICE">53d55eabc364da10604bf9477d013119</sys_scope>
+        <sys_update_name>sys_script_client_ccafcffc47b01210432d0c59e16d432a</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-09-23 11:12:53</sys_updated_on>
+        <table>x_1318454_pmo_task</table>
+        <type>onLoad</type>
+        <ui_type>10</ui_type>
+        <view/>
+    </sys_script_client>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="PROJECT MANAGEMENT OFFICE">53d55eabc364da10604bf9477d013119</application>
+        <file_path/>
+        <instance_id>0b24ed9f1b6ab514ba5ceb9b2d4bcb36</instance_id>
+        <instance_name>dev220367</instance_name>
+        <name>sys_script_client_ccafcffc47b01210432d0c59e16d432a</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sys_script_client"&gt;&lt;sys_script_client action="INSERT_OR_UPDATE"&gt;&lt;active&gt;false&lt;/active&gt;&lt;applies_extended&gt;false&lt;/applies_extended&gt;&lt;condition/&gt;&lt;description/&gt;&lt;field/&gt;&lt;global&gt;true&lt;/global&gt;&lt;isolate_script&gt;true&lt;/isolate_script&gt;&lt;messages/&gt;&lt;name&gt;Set Related Project Feild  Value on load&lt;/name&gt;&lt;order/&gt;&lt;script&gt;&lt;![CDATA[function onLoad() {
+	g_form.addInfoMessage("client script")
+
+	// alert(g_scratchpad.desc);
+    // Check if g_scratchpad.desc is defined
+    // if (g_scratchpad.desc) {
+    //     // Set the value on the task form, assuming you have a field to display it
+	// 	alert('hello ' + g_scratchpad.desc);
+    //     g_form.setValue('description_field_on_task', g_scratchpad.desc); 
+        
+    //     // Or simply alert the value for debugging
+    //     alert('Description from Project: ' + g_scratchpad.desc);
+    // } else {
+    //     console.log('g_scratchpad.desc is undefined');
+    // }
+}
+]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script_client&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-09-20 06:29:51&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;ccafcffc47b01210432d0c59e16d432a&lt;/sys_id&gt;&lt;sys_mod_count&gt;56&lt;/sys_mod_count&gt;&lt;sys_name&gt;Set Related Project Feild  Value on load&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="PROJECT MANAGEMENT OFFICE" source="x_1318454_pmo"&gt;53d55eabc364da10604bf9477d013119&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="PROJECT MANAGEMENT OFFICE"&gt;53d55eabc364da10604bf9477d013119&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_client_ccafcffc47b01210432d0c59e16d432a&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-09-23 11:12:53&lt;/sys_updated_on&gt;&lt;table&gt;x_1318454_pmo_task&lt;/table&gt;&lt;type&gt;onLoad&lt;/type&gt;&lt;ui_type&gt;10&lt;/ui_type&gt;&lt;view/&gt;&lt;/sys_script_client&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>905173922</payload_hash>
+        <record_name>Set Related Project Feild  Value on load</record_name>
+        <reverted_from/>
+        <source>eacae3f347e01210432d0c59e16d4379</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-09-23 11:12:53</sys_created_on>
+        <sys_id>cb7dabfd47b45210432d0c59e16d4334</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1921e9598640000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-09-23 11:12:53</sys_updated_on>
+        <type>Client Script</type>
+        <update_guid>437dabfd6ab452103944eb5b091afa34</update_guid>
+        <update_guid_history>437dabfd6ab452103944eb5b091afa34:905173922,d8ffdb713b345210c3deb7d70a8f8e42:398735450,65cf9f71dd345210dfbb406dfc2c97bc:1890879047,3b9fdb712b3452105ce62f6f5f66473d:1807481368,88cdd7390db052107bb117951893b7e1:-920384920,747d973dc2b052101caa5a63d3eedcc9:-1003254669,f04d17f5d7f0521095d5776e8d73acc8:-82444087,0c8bd7392bb05210732ba32058eccda0:-2104078931,1f1bd739c5b052100e308e4cd445c699:2146677575,fa68b279c5381210ade959397f2ad5cc:1619371818,b3083e39703812109381d1c3864e0fa0:-1428359637,f30672f144f41210e58613c3bf7a8044:-135040726,f945fab121f41210bf12e62666490540:-642521782,4253b63db4b41210e544078e89e77fe7:1052922252,9682723db774121068df48d9d1084c40:1833849719,ff623af9bdb41210ee18bf4ccad3c7c1:142477838,2242f27557b412101956c4dd25a80e9f:-685737330,c002be3d53741210f2b2ef42c7dd458f:-154967109,c98176b1e0b412108c2119de10858b09:-652778629,9c30f675627412104f5321a2c4f7fc87:906342965,796e52312db01210cc9047d7c617a259:-1821223261,d9ed16f1ee7012105762aff8931af70f:-1185484566,af7d5ab5cd7012104953d4a9d30d0fe3:1679660020,4d1d1ab54a701210cac11f8be52edbbe:374961002,cb9cd2f1e47012101791ff82c1c372fc:1160362708,a07c92714b7012103642fdb01efe02ad:-530751305,a44cda3133701210f604bb26aaad478e:1290496552,f74b5a799630121037aa25df4e50e7b5:927752911,c8b9d2b58a301210171eeaa04849adb1:915175801,630952b56130121038cbc3b41d3ee2c8:-208573490,4df796f56130121081ca033f41885741:554078554,e0f61235da301210cd741ee89a4c8c14:-1695680785,23656c0d1d785210d5caaaa83887188a:1921209242,cd84e809da7852108e4595b39aebc424:-947731352,3e51ec89d7b45210d82a8386a6062fcf:1109498625,1f0b8001e6345210412338f54a8a78c2:-2133404058,72364449a0b052103d9e461eec9d8164:-1285460627,ad75c04151b05210a1586591416a95dc:-2133404058,2e354845a9b05210c74f38929a80d611:299735198,98b4c0cd9870521090892afb8492088c:-1288343051,8c8480418bb05210623c578e5c9b825f:244640103,2fd28409a270521081f89aac814f8c45:568768386,320fb3f0753052101ea1612f93c2fd4b:1223522618,02beb770e0305210baa13fd15a74e080:-515941045,9f2ef73c61fc121024c9d427f519bdd8:-352771589,bb0ebb78b3fc12108c8a2d070444a239:-732250434,61bd7f385ffc1210fbc9ca3be71f8a65:-645219317,1ddcb3346bfc12105d19424b9f1bd7d9:-1715229253,9aafdbf8faf41210b3e9f0b4819d6209:-1799319360,2d6fd7f849f4121036547e970d975818:1693938733,450f5bf4def41210d50cc2b07d67e172:-940635695,14b91378f67412103539eb357065c040:682624386,1e765bf086741210cadac70bfa4ceb21:18085616,44355b70a67412106f16cdc99e74e9a9:1332547649,b67313f49134121086ea47501199af7f:-1682120574,f7f1d374fef01210f84671abd4f8bf53:1966665521,3bef4730b1f01210ec6e92bd0b83f61e:-601788361</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-09-24 05:08:38</sys_created_on>
+        <sys_db_object display_value="" name="sys_script_client">sys_script_client</sys_db_object>
+        <sys_id>714530e3becb484486a68b363f1d3ca9</sys_id>
+        <sys_metadata>ccafcffc47b01210432d0c59e16d432a</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Set Related Project Feild  Value on load</sys_name>
+        <sys_package display_value="PROJECT MANAGEMENT OFFICE" source="x_1318454_pmo">53d55eabc364da10604bf9477d013119</sys_package>
+        <sys_parent display_value="Task">76b69fabc3e8da10604bf9477d0131a8</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="PROJECT MANAGEMENT OFFICE">53d55eabc364da10604bf9477d013119</sys_scope>
+        <sys_scope_delete display_value="">008fbbffdf014ae980567bd4b379e0f1</sys_scope_delete>
+        <sys_update_name>sys_script_client_ccafcffc47b01210432d0c59e16d432a</sys_update_name>
+        <sys_update_version display_value="sys_script_client_ccafcffc47b01210432d0c59e16d432a">cb7dabfd47b45210432d0c59e16d4334</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-09-24 05:08:38</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
