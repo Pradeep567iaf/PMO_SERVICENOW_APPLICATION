@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script">
+    <sys_script action="DELETE">
+        <abort_action>false</abort_action>
+        <access>package_private</access>
+        <action_delete>false</action_delete>
+        <action_insert>true</action_insert>
+        <action_query>false</action_query>
+        <action_update>true</action_update>
+        <active>true</active>
+        <add_message>false</add_message>
+        <advanced>true</advanced>
+        <change_fields>false</change_fields>
+        <client_callable>false</client_callable>
+        <collection>x_1318454_pmo_task</collection>
+        <condition/>
+        <description/>
+        <execute_function>false</execute_function>
+        <filter_condition/>
+        <is_rest>false</is_rest>
+        <message/>
+        <name>PMO_Project_Name_Pass_to_task</name>
+        <order>100</order>
+        <priority>100</priority>
+        <rest_method/>
+        <rest_method_text/>
+        <rest_service/>
+        <rest_service_text/>
+        <rest_variables/>
+        <role_conditions/>
+        <script><![CDATA[// This script runs when loading the task form
+(function executeRule(current, previous /*null when async*/) {
+
+    var projectGR = new GlideRecord('x_1318454_pmo_project');
+	//projectGR.addQuery('sys_id', curr)
+    projectGR.query();
+
+	
+
+	var pn = gs.action.getGlideURI().getMap().get('sysparm_project_name');
+     gs.addInfoMessage(pn);
+	
+	while(projectGR.next()){
+        gs.addInfoMessage("The Project Name is " + projectGR.name); 
+	} 
+
+
+
+
+})(current, previous);]]></script>
+        <sys_class_name>sys_script</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-09-20 09:44:01</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>88eb37f047fc1210432d0c59e16d43aa</sys_id>
+        <sys_mod_count>31</sys_mod_count>
+        <sys_name>PMO_Project_Name_Pass_to_task</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="PROJECT MANAGEMENT OFFICE" source="x_1318454_pmo">53d55eabc364da10604bf9477d013119</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="PROJECT MANAGEMENT OFFICE">53d55eabc364da10604bf9477d013119</sys_scope>
+        <sys_update_name>sys_script_88eb37f047fc1210432d0c59e16d43aa</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-09-23 10:59:00</sys_updated_on>
+        <template/>
+        <when>before_display</when>
+    </sys_script>
+    <sys_translated_text action="DELETE" query="documentkey=88eb37f047fc1210432d0c59e16d43aa"/>
+<sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="PROJECT MANAGEMENT OFFICE">53d55eabc364da10604bf9477d013119</application>
+        <file_path/>
+        <instance_id>0b24ed9f1b6ab514ba5ceb9b2d4bcb36</instance_id>
+        <instance_name>dev220367</instance_name>
+        <name>sys_script_88eb37f047fc1210432d0c59e16d43aa</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sys_script"&gt;
+    &lt;sys_script action="INSERT_OR_UPDATE"&gt;
+        &lt;abort_action&gt;false&lt;/abort_action&gt;
+        &lt;access&gt;package_private&lt;/access&gt;
+        &lt;action_delete&gt;false&lt;/action_delete&gt;
+        &lt;action_insert&gt;true&lt;/action_insert&gt;
+        &lt;action_query&gt;false&lt;/action_query&gt;
+        &lt;action_update&gt;true&lt;/action_update&gt;
+        &lt;active&gt;true&lt;/active&gt;
+        &lt;add_message&gt;false&lt;/add_message&gt;
+        &lt;advanced&gt;true&lt;/advanced&gt;
+        &lt;change_fields&gt;false&lt;/change_fields&gt;
+        &lt;client_callable&gt;false&lt;/client_callable&gt;
+        &lt;collection&gt;x_1318454_pmo_task&lt;/collection&gt;
+        &lt;condition/&gt;
+        &lt;description/&gt;
+        &lt;execute_function&gt;false&lt;/execute_function&gt;
+        &lt;filter_condition/&gt;
+        &lt;is_rest&gt;false&lt;/is_rest&gt;
+        &lt;message/&gt;
+        &lt;name&gt;PMO_Project_Name_Pass_to_task&lt;/name&gt;
+        &lt;order&gt;100&lt;/order&gt;
+        &lt;priority&gt;100&lt;/priority&gt;
+        &lt;rest_method/&gt;
+        &lt;rest_method_text/&gt;
+        &lt;rest_service/&gt;
+        &lt;rest_service_text/&gt;
+        &lt;rest_variables/&gt;
+        &lt;role_conditions/&gt;
+        &lt;script&gt;&lt;![CDATA[// This script runs when loading the task form
+(function executeRule(current, previous /*null when async*/) {
+
+    var projectGR = new GlideRecord('x_1318454_pmo_project');
+	//projectGR.addQuery('sys_id', curr)
+    projectGR.query();
+
+	
+
+	var pn = gs.action.getGlideURI().getMap().get('sysparm_project_name');
+     gs.addInfoMessage(pn);
+	
+	while(projectGR.next()){
+        gs.addInfoMessage("The Project Name is " + projectGR.name); 
+	} 
+
+
+
+
+})(current, previous);]]&gt;&lt;/script&gt;
+        &lt;sys_class_name&gt;sys_script&lt;/sys_class_name&gt;
+        &lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;
+        &lt;sys_created_on&gt;2024-09-20 09:44:01&lt;/sys_created_on&gt;
+        &lt;sys_domain&gt;global&lt;/sys_domain&gt;
+        &lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;
+        &lt;sys_id&gt;88eb37f047fc1210432d0c59e16d43aa&lt;/sys_id&gt;
+        &lt;sys_mod_count&gt;31&lt;/sys_mod_count&gt;
+        &lt;sys_name&gt;PMO_Project_Name_Pass_to_task&lt;/sys_name&gt;
+        &lt;sys_overrides/&gt;
+        &lt;sys_package display_value="PROJECT MANAGEMENT OFFICE" source="x_1318454_pmo"&gt;53d55eabc364da10604bf9477d013119&lt;/sys_package&gt;
+        &lt;sys_policy/&gt;
+        &lt;sys_scope display_value="PROJECT MANAGEMENT OFFICE"&gt;53d55eabc364da10604bf9477d013119&lt;/sys_scope&gt;
+        &lt;sys_update_name&gt;sys_script_88eb37f047fc1210432d0c59e16d43aa&lt;/sys_update_name&gt;
+        &lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;
+        &lt;sys_updated_on&gt;2024-09-23 10:59:00&lt;/sys_updated_on&gt;
+        &lt;template/&gt;
+        &lt;when&gt;before_display&lt;/when&gt;
+    &lt;/sys_script&gt;
+    &lt;sys_translated_text action="delete_multiple" query="documentkey=88eb37f047fc1210432d0c59e16d43aa"/&gt;
+&lt;/record_update&gt;</payload>
+        <payload_hash>-1686887537</payload_hash>
+        <record_name>PMO_Project_Name_Pass_to_task</record_name>
+        <reverted_from/>
+        <source>4dfeeb8a47b01210432d0c59e16d438d</source>
+        <source_table>sys_upgrade_history</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-09-24 05:57:52</sys_created_on>
+        <sys_id>52fe23ca47b01210432d0c59e16d432c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>192229b8b830000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-09-24 05:57:52</sys_updated_on>
+        <type>Business Rule</type>
+        <update_guid>1efe23cad2b01210605c4701656f262b</update_guid>
+        <update_guid_history>1efe23cad2b01210605c4701656f262b:0,aad7638ec6301210ef21374610954944:1380202887,634ae3f972b45210bb301124e7634420:1443527547,50c9e7757f7452103c920ed81d1c5168:2133166032,aa796ff94fb45210db0b11c61e1be47d:-378488784,74866fb91f745210e2b07dd812cbbef2:387720089,8f66a3f10b7452101e6d348dc0d7f73a:-41063457,d1166ff5af745210f941d6f1cbbf149e:948271846,cb65a3f1ed74521007cf9f932d33be33:-820192428,95c3e7758b3452106a52197ab7cf3b10:-1721071401,672327b121345210dcaa3047d046b30d:25253661,bd202b7df1f05210c7978938841af442:-210512147,046f5771323452107581c04c33e5469b:969713265,490d1bb90df8121096f6d1f6e5738a50:1626826916,618d7ef1d97812101b74f0088d710f01:-1609912570,01ccba35b6781210b4096171e2f2e467:1879761145,6381e8c50d785210253b0c93301d2e63:679380671,c96a400138345210c432126d50e41c7e:-2026615988,d12640092eb052100a122acc7b055c15:1925206376,5ba5444904b05210f3b9642d7d6d865b:762222282,ef24cc8dec705210fd1e4ed11c70fa32:-2026615988,26f3484d38705210821d5aa51ea66d08:-1981295952,fe538c4995705210b416fc1bea655c7d:-1043616169,7eb2c40963705210385ce1e2521c7801:-908824673,ca2248c5d970521093ad734f05a575d9:-785300589,a1b14c0536705210e2ede9d612e8ada2:1062438477,45514c05d1705210e8b8ce69fa76639b:2101560779,0370004d9a305210abbaf406503cf72d:1275434547,9bcffb3843305210a16a9e142f22c115:-1028376237,2caff370aa305210fe9cc2a812a35771:-1333952955,887fb3b00c305210b14e353705ab18d8:-1562658910,b32db33896fc12109f779443de9ec83c:-1459359311,e98cfff42bf81210b03822794f5c54fd:-1401526199,d06cbff082fc1210291ef48c049f19ea:-1492720089</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-09-24 06:09:56</sys_created_on>
+        <sys_db_object display_value="" name="sys_script">sys_script</sys_db_object>
+        <sys_id>782cbb4286ff41629e48c42bcbeb9d29</sys_id>
+        <sys_metadata>88eb37f047fc1210432d0c59e16d43aa</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>PMO_Project_Name_Pass_to_task</sys_name>
+        <sys_package display_value="PROJECT MANAGEMENT OFFICE" source="x_1318454_pmo">53d55eabc364da10604bf9477d013119</sys_package>
+        <sys_parent display_value="Task">76b69fabc3e8da10604bf9477d0131a8</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="PROJECT MANAGEMENT OFFICE">53d55eabc364da10604bf9477d013119</sys_scope>
+        <sys_scope_delete display_value="">008fbbffdf014ae980567bd4b379e0f1</sys_scope_delete>
+        <sys_update_name>sys_script_88eb37f047fc1210432d0c59e16d43aa</sys_update_name>
+        <sys_update_version display_value="sys_script_88eb37f047fc1210432d0c59e16d43aa">52fe23ca47b01210432d0c59e16d432c</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-09-24 06:09:56</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
