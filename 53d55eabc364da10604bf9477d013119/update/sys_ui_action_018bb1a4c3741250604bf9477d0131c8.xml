@@ -30,26 +30,28 @@
         <name>Create Task</name>
         <onclick>createNewTask()</onclick>
         <order>1</order>
-        <script><![CDATA[function createNewTask() {
-    var userResponse = confirm("Are you sure to create a new task?");
-
-    if (userResponse) {
+        <script>
+        <![CDATA[function createNewTask() {
+        var userResponse = confirm("Are you sure to create a new task?");
+        Create_Task_AutoPopulate_Related_Project_Name
+        if (userResponse) {
         gsftSubmit(null, g_form.getFormElement(), 'backendLogic_create_task'); // calling the server side function;
-    }
+         }
 
-}
+        }
+ 
+        if (typeof window == 'undefined') // check window is undefined
+            backendLogic_create_task();
 
-if (typeof window == 'undefined') // check window is undefined
-    backendLogic_create_task();
-
-function backendLogic_create_task() {
-    var instanceName = gs.getProperty('instance_name'); // Get the instance name
-    var projectNameSysid = current.sys_id; // Get the record sys_id	
-    var url=`https://${instanceName}.service-now.com/x_1318454_pmo_task.do?sys_id=-1&sysparm_query=related_project%3d${projectNameSysid}`; // redirect url to create task
-	action.setRedirectURL(url); // method to redirect to particular url with instance name and projectid
-
-
-}]]></script>
+        function backendLogic_create_task() {
+        var instanceName = gs.getProperty('instance_name'); // Get the instance name
+        var projectNameSysid = current.sys_id; // Get the record sys_id
+        var url=`https://${instanceName}.service-now.com/x_1318454_pmo_task.do?sys_id=-1&sysparm_query=related_project%3d${projectNameSysid}`; // redirect url to create task
+        action.setRedirectURL(url); // method to redirect to particular url with instance name and projectid
+        var projectNameSysid = current.sys_id; // Get the record sys_id	
+        var url=`https://${instanceName}.service-now.com/x_1318454_pmo_task.do?sys_id=-1&sysparm_query=related_project%3d${projectNameSysid}`; // redirect url to create task
+	      action.setRedirectURL(url); // method to redirect to particular url with instance name and projectid
+        </script>
         <show_insert>true</show_insert>
         <show_multiple_update>false</show_multiple_update>
         <show_query>false</show_query>
@@ -60,7 +62,11 @@ function backendLogic_create_task() {
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>018bb1a4c3741250604bf9477d0131c8</sys_id>
+
+        <sys_mod_count>114</sys_mod_count>
+
         <sys_mod_count>115</sys_mod_count>
+
         <sys_name>Create Task</sys_name>
         <sys_overrides/>
         <sys_package display_value="PROJECT MANAGEMENT OFFICE" source="x_1318454_pmo">53d55eabc364da10604bf9477d013119</sys_package>
@@ -68,6 +74,8 @@ function backendLogic_create_task() {
         <sys_scope display_value="PROJECT MANAGEMENT OFFICE">53d55eabc364da10604bf9477d013119</sys_scope>
         <sys_update_name>sys_ui_action_018bb1a4c3741250604bf9477d0131c8</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
+         Create_Task_AutoPopulate_Related_Project_Name
+        <sys_updated_on>2024-09-24 05:58:39</sys_updated_on>
         <sys_updated_on>2024-09-23 12:05:45</sys_updated_on>
         <table>x_1318454_pmo_project</table>
         <ui11_compatible>true</ui11_compatible>
