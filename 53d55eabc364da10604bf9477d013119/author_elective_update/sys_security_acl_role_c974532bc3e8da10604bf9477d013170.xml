@@ -41,7 +41,7 @@
         <update_guid_history>0d74532bb1e8da108ce646abe1ea5a73:-574391277</update_guid_history>
     </sys_update_version>
     <sys_metadata_delete action="INSERT_OR_UPDATE">
-        <sys_audit_delete display_value="x_1318454_pmo_task.x_1318454_pmo.task_user">6da69bebc3e8da10604bf9477d013150</sys_audit_delete>
+        <sys_audit_delete display_value="">6da69bebc3e8da10604bf9477d013150</sys_audit_delete>
         <sys_class_name>sys_metadata_delete</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2024-09-16 09:46:47</sys_created_on>

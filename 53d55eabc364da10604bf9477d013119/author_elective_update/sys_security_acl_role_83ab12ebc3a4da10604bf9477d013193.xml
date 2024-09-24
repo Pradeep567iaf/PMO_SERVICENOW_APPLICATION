@@ -41,7 +41,7 @@
         <update_guid_history>83ab12eb8aa4da1049f0e632960c9795:1287488822</update_guid_history>
     </sys_update_version>
     <sys_metadata_delete action="INSERT_OR_UPDATE">
-        <sys_audit_delete display_value="x_1318454_pmo_pmo_project_table.x_1318454_pmo.pmo_project_table_user">87edd6afc3a4da10604bf9477d013116</sys_audit_delete>
+        <sys_audit_delete display_value="">87edd6afc3a4da10604bf9477d013116</sys_audit_delete>
         <sys_class_name>sys_metadata_delete</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2024-09-16 05:38:57</sys_created_on>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_embedded_help_role">
+    <sys_embedded_help_role action="INSERT_OR_UPDATE">
+        <order>100</order>
+        <role/>
+        <sys_class_name>sys_embedded_help_role</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-09-17 06:00:28</sys_created_on>
+        <sys_id>807c23b747e01210432d0c59e16d4338</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>34bba73747e01210432d0c59e16d43b6</sys_name>
+        <sys_package display_value="PROJECT MANAGEMENT OFFICE" source="x_1318454_pmo">53d55eabc364da10604bf9477d013119</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="PROJECT MANAGEMENT OFFICE">53d55eabc364da10604bf9477d013119</sys_scope>
+        <sys_update_name>sys_embedded_help_role_807c23b747e01210432d0c59e16d4338</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-09-17 06:00:28</sys_updated_on>
+    </sys_embedded_help_role>
+</record_update>

@@ -52,7 +52,7 @@
         <update_guid_history>6c5d5a6f74a4da103336be4462e81974:621402921,f6ab12eb36a4da10e56afcd17f043f48:-1118178999</update_guid_history>
     </sys_update_version>
     <sys_metadata_delete action="INSERT_OR_UPDATE">
-        <sys_audit_delete display_value="Project Management Office">7e0e9e6fc3a4da10604bf9477d013168</sys_audit_delete>
+        <sys_audit_delete display_value="">7e0e9e6fc3a4da10604bf9477d013168</sys_audit_delete>
         <sys_class_name>sys_metadata_delete</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2024-09-16 05:39:29</sys_created_on>
