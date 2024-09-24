@@ -1,49 +1,55 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
     <element db_object_id="76b69fabc3e8da10604bf9477d0131a8" label="Task" max_length="40" name="x_1318454_pmo_task" type="collection">
-        <element label="Assigned To" max_length="32" name="assigned_to" reference="sys_user" type="reference"/>
-        <element choice="3" default="created" label="Status" max_length="40" name="status" type="choice">
+        <element active="false" choice="1" label="Assignment Group" max_length="40" name="assignment_group" type="choice">
             <choice>
-                <element inactive_on_update="false" label="Completed" sequence="5" value="completed"/>
-                <element inactive_on_update="false" label="verification" sequence="3" value="verification"/>
-                <element inactive_on_update="false" label="Created" sequence="1" value="created"/>
-                <element inactive_on_update="false" label="Re assigned" sequence="4" value="re_assigned"/>
-                <element inactive_on_update="false" label="In progress" sequence="2" value="in_progress"/>
+                <element inactive_on_update="false" label="Frontend" sequence="1" value="frontend"/>
+                <element inactive_on_update="false" label="Database" sequence="3" value="database"/>
+                <element inactive_on_update="false" label="Tester" sequence="4" value="tester"/>
+                <element inactive_on_update="false" label="Backend" sequence="2" value="backend"/>
             </choice>
         </element>
-        <element choice="1" label="Assignment Group" max_length="40" name="assignment_group" type="choice">
+        <element calculation="(function calculatedFieldValue(current) {&#13;&#10;&#9;gs.addInfoMessage(current.assignee_group.role);&#13;&#10;&#13;&#10;&#9;&#13;&#10;&#9;// var user = new GlideRecord('sys_user');&#13;&#10;&#9;// user.addQuery('email','abel.tuter@example.com');&#13;&#10;&#9;// user.query();&#13;&#10;&#9;// if(user.next()){&#13;&#10;&#9;// &#9;gs.addInfoMessage(&quot;testing&quot;);&#13;&#10;&#9;// &#9;gs.addInfoMessage(user.name);&#13;&#10;&#9;// &#9;return '62826bf03710200044e0bfc8bcbe5df1';&#13;&#10;&#9;// &#9;// current.task_description = user.sys_id;&#13;&#10;&#13;&#10;&#9;// }&#13;&#10;    &#13;&#10;    // var group = current.getValue('assignee_group');&#13;&#10;    // gs.addInfoMessage(group);&#13;&#10;    // if (group) {&#13;&#10;    //     gs.addInfoMessage(&quot;in if block&quot;);&#13;&#10;    //     // 'sys_idIN' + getUsersByGroup(group);&#13;&#10;&#13;&#10;    // } else {&#13;&#10;    //     gs.addInfoMessage(&quot;in else block&quot;);&#13;&#10;    //     // ''; // Return empty qualifier if no group is selected&#13;&#10;    // }&#13;&#10;&#13;&#10;    // function getUsersByGroup(groupId) {&#13;&#10;    //     var usersInGroup = [];&#13;&#10;    //     var gr = new GlideRecord('sys_user_grmember');&#13;&#10;    //     gr.addQuery('group', groupId);&#13;&#10;    //     gr.query();&#13;&#10;    //     while (gr.next()) {&#13;&#10;    //         usersInGroup.push(gr.user.sys_id.toString());&#13;&#10;    //     }&#13;&#10;    //     return usersInGroup.join(',');&#13;&#10;    // }&#13;&#10;&#13;&#10;    // if (current.assignee_group) {&#13;&#10;    // &#9;gs.addErrorMessage(&quot;hello&quot;);&#13;&#10;    // &#9;gs.addInfoMessage(current.assignee_group);&#13;&#10;    // &#9;var gr = new GlideRecord('sys_user_grmember');&#13;&#10;    //     gr.addQuery('group', current.assignee_group);&#13;&#10;    //     gr.query();&#13;&#10;    //     while (gr.next()) {&#13;&#10;    //         users.push(gr.user.sys_id.toString());&#13;&#10;&#13;&#10;    //     }&#13;&#10;&#13;&#10;&#13;&#10;&#13;&#10;    //     'sys_idIN' + users; &#13;&#10;    // &#9;return users;&#13;&#10;    // }&#13;&#10;    // else{&#13;&#10;    // &#9;gs.addErrorMessage(&quot;in else block&quot;);&#13;&#10;    // &#9;return &quot;&quot;;&#13;&#10;    // }&#13;&#10;    //  else {&#13;&#10;    // &#9;gs.addErrorMessage(&quot;else block&quot;);&#13;&#10;    //     'sys_idIN' + gs.getUsers();&#13;&#10;    // &#9;gs.addErrorMessage(gs.getUser());&#13;&#10;    // }&#13;&#10;    // return ''; // return the calculated value&#13;&#10;&#13;&#10;})(current);" label="Assigned To" max_length="32" name="assigned_to" reference="sys_user" reference_qual="roles=x_1318454_pmo.Backend_role^ORroles=x_1318454_pmo.Frontend_role^ORroles=x_1318454_pmo.Database_role^ORroles=x_1318454_pmo.Tester_role^EQ" reference_qual_condition="roles=x_1318454_pmo.Backend_role^ORroles=x_1318454_pmo.Frontend_role^ORroles=x_1318454_pmo.Database_role^ORroles=x_1318454_pmo.Tester_role^EQ" type="reference"/>
+        <element choice="3" label="Status" max_length="40" name="status" type="choice">
             <choice>
-                <element inactive_on_update="false" label="Tester" sequence="4" value="tester"/>
-                <element inactive_on_update="false" label="Frontend" sequence="1" value="frontend"/>
-                <element inactive_on_update="false" label="Backend" sequence="2" value="backend"/>
-                <element inactive_on_update="false" label="Database" sequence="3" value="database"/>
+                <element inactive_on_update="false" label="On Hold" sequence="4" value="on_hold"/>
+                <element inactive_on_update="false" label="In Progress" sequence="3" value="in_progress"/>
+                <element inactive_on_update="false" label="Reopen" sequence="6" value="Reopen"/>
+                <element inactive_on_update="false" label="Assigned" sequence="2" value="assigned"/>
+                <element inactive_on_update="false" label="Completed" sequence="7" value="completed"/>
+                <element inactive="true" inactive_on_update="true" label="Cancelled" value="cancelled"/>
+                <element inactive_on_update="false" label="Closed" sequence="8" value="closed"/>
+                <element inactive="true" inactive_on_update="true" label="Created" value="created"/>
+                <element inactive_on_update="false" label="Resolved" sequence="5" value="resolved"/>
+                <element inactive_on_update="false" label="New" sequence="1" value="new"/>
             </choice>
         </element>
         <element label="End Date" max_length="40" name="end_date" type="glide_date"/>
+        <element label="Assignee Group" max_length="32" name="assignee_group" reference="sys_user_group" reference_qual="nameSTARTSWITHPMO_^nameNOT LIKEPMO_MANAGER^EQ" reference_qual_condition="nameSTARTSWITHPMO_^nameNOT LIKEPMO_MANAGER^EQ" type="reference"/>
         <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" read_only="true" type="string"/>
         <element choice="1" label="Task Type" mandatory="true" max_length="40" name="task_type" type="choice">
             <choice>
-                <element inactive_on_update="false" label="Database Design" value="database_design"/>
-                <element inactive_on_update="false" label="Refactoring" value="refactoring"/>
-                <element inactive_on_update="false" label="UI/UX Design" value="ui_ux_design"/>
-                <element inactive_on_update="false" label="Client Communication" value="client_communication"/>
-                <element inactive_on_update="false" label="Integration Testing" value="integration_testing"/>
-                <element inactive_on_update="false" label="Task Estimation" value="task_estimation"/>
-                <element inactive_on_update="false" label="Bug Fix" value="bug_fix"/>
                 <element inactive_on_update="false" label="Feature Development" value="Feature_Development"/>
+                <element inactive_on_update="false" label="Support" value="support"/>
                 <element inactive_on_update="false" label="DevOps/Infrastructure" value="deveops_infrastructure"/>
                 <element inactive_on_update="false" label="Research" value="research"/>
-                <element inactive_on_update="false" label="Code Review" value="code_review"/>
-                <element inactive_on_update="false" label="Performance Optimization" value="performance_optimization"/>
+                <element inactive_on_update="false" label="Database Design" value="database_design"/>
+                <element inactive_on_update="false" label="Refactoring" value="refactoring"/>
+                <element inactive_on_update="false" label="Client Communication" value="client_communication"/>
+                <element inactive_on_update="false" label="Integration Testing" value="integration_testing"/>
                 <element inactive_on_update="false" label="Testing &amp; QA" value="testing_qa"/>
-                <element inactive_on_update="false" label="Hotfix" value="hotfix"/>
-                <element inactive_on_update="false" label="Support" value="support"/>
                 <element inactive_on_update="false" label="Documentation" value="documentation"/>
                 <element inactive_on_update="false" label="Security Review" value="security_review"/>
                 <element inactive_on_update="false" label="Deployment" value="deployment"/>
                 <element inactive_on_update="false" label="Release Management" value="release_management"/>
+                <element inactive_on_update="false" label="Code Review" value="code_review"/>
+                <element inactive_on_update="false" label="Performance Optimization" value="performance_optimization"/>
+                <element inactive_on_update="false" label="UI/UX Design" value="ui_ux_design"/>
+                <element inactive_on_update="false" label="Bug Fix" value="bug_fix"/>
+                <element inactive_on_update="false" label="Hotfix" value="hotfix"/>
+                <element inactive_on_update="false" label="Task Estimation" value="task_estimation"/>
             </choice>
         </element>
-        <element label="Related Project" max_length="32" name="related_project" reference="x_1318454_pmo_project" type="reference"/>
+        <element label="Related Project" max_length="32" name="related_project" reference="x_1318454_pmo_project" reference_qual="nameISNOTEMPTY^EQ" reference_qual_condition="nameISNOTEMPTY^EQ" type="reference"/>
         <element label="Task Name" max_length="40" name="task_name" type="string"/>
         <element label="Start Date" max_length="40" name="start_date" type="glide_date"/>
         <element label="Task Description" mandatory="true" max_length="400" name="task_description" type="string"/>
@@ -58,6 +64,12 @@
             <element name="assigned_to"/>
         </index>
         <index name="index2">
+            <element name="assignee_group"/>
+        </index>
+        <index name="index3">
+            <element name="assignment_group"/>
+        </index>
+        <index name="index4">
             <element name="related_project"/>
         </index>
     </element>

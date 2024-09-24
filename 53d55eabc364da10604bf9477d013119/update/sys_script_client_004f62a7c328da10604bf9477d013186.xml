@@ -14,7 +14,6 @@
     function randomIdGenrator() { // Function to generate the random project id
         var random_number = Math.floor(100000 + Math.random() * 900000);
         var unique_id = "PMO" + random_number;
-        // g_form.addErrorMessage("Generated Id is" + unique_id);
         return unique_id;
     }
 
@@ -26,7 +25,6 @@
 
         function fetchRecord(response) {
             var res = response.responseXML.documentElement.getAttribute("answer");
-            // g_form.addInfoMessage("fetched record is " + res);
             if (res !== "") {
                 id = randomIdGenrator();
                 checkUniqueId(id);
@@ -38,11 +36,7 @@
         }
     }
     if (g_form.isNewRecord()) {
-        // var id = 'PMO946954';
         var id = randomIdGenrator(); // Calling function to Generate the random id for project
-        // var execution = 1;
-        // var maxAttempts = 10;
-        // var attempts = 0;
         checkUniqueId(id); // calling checkUniqueId function
 
     }
@@ -53,7 +47,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>004f62a7c328da10604bf9477d013186</sys_id>
-        <sys_mod_count>35</sys_mod_count>
+        <sys_mod_count>36</sys_mod_count>
         <sys_name>Random Id Generator</sys_name>
         <sys_overrides/>
         <sys_package display_value="PROJECT MANAGEMENT OFFICE" source="x_1318454_pmo">53d55eabc364da10604bf9477d013119</sys_package>
@@ -61,7 +55,7 @@
         <sys_scope display_value="PROJECT MANAGEMENT OFFICE">53d55eabc364da10604bf9477d013119</sys_scope>
         <sys_update_name>sys_script_client_004f62a7c328da10604bf9477d013186</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-09-17 07:15:27</sys_updated_on>
+        <sys_updated_on>2024-09-24 04:59:00</sys_updated_on>
         <table>x_1318454_pmo_project</table>
         <type>onLoad</type>
         <ui_type>10</ui_type>
