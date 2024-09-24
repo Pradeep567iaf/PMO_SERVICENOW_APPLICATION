@@ -19,19 +19,38 @@
             <dependent_value/>
             <element>status</element>
             <hint/>
-            <inactive>false</inactive>
+            <inactive>true</inactive>
+            <label>Cancelled</label>
+            <language>en</language>
+            <name>x_1318454_pmo_task</name>
+            <sequence/>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2024-09-20 05:19:21</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>4</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2024-09-23 09:50:04</sys_updated_on>
+            <value>cancelled</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>status</element>
+            <hint/>
+            <inactive>true</inactive>
             <label>Created</label>
             <language>en</language>
             <name>x_1318454_pmo_task</name>
-            <sequence>1</sequence>
+            <sequence/>
             <synonyms/>
             <sys_created_by>admin</sys_created_by>
             <sys_created_on>2024-09-16 10:09:46</sys_created_on>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
-            <sys_mod_count>3</sys_mod_count>
+            <sys_mod_count>6</sys_mod_count>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2024-09-16 10:12:52</sys_updated_on>
+            <sys_updated_on>2024-09-23 09:49:58</sys_updated_on>
             <value>created</value>
         </sys_choice>
         <sys_choice action="INSERT_OR_UPDATE">
@@ -39,18 +58,56 @@
             <element>status</element>
             <hint/>
             <inactive>false</inactive>
-            <label>In progress</label>
+            <label>New</label>
+            <language>en</language>
+            <name>x_1318454_pmo_task</name>
+            <sequence>1</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2024-09-23 09:40:26</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2024-09-23 09:50:22</sys_updated_on>
+            <value>new</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>status</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Assigned</label>
             <language>en</language>
             <name>x_1318454_pmo_task</name>
             <sequence>2</sequence>
             <synonyms/>
             <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2024-09-23 09:40:42</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2024-09-23 09:50:33</sys_updated_on>
+            <value>assigned</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>status</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>In Progress</label>
+            <language>en</language>
+            <name>x_1318454_pmo_task</name>
+            <sequence>3</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
             <sys_created_on>2024-09-16 10:06:40</sys_created_on>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
-            <sys_mod_count>3</sys_mod_count>
+            <sys_mod_count>7</sys_mod_count>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2024-09-16 10:12:59</sys_updated_on>
+            <sys_updated_on>2024-09-23 09:51:15</sys_updated_on>
             <value>in_progress</value>
         </sys_choice>
         <sys_choice action="INSERT_OR_UPDATE">
@@ -58,38 +115,57 @@
             <element>status</element>
             <hint/>
             <inactive>false</inactive>
-            <label>verification</label>
+            <label>On Hold</label>
             <language>en</language>
             <name>x_1318454_pmo_task</name>
-            <sequence>3</sequence>
+            <sequence>4</sequence>
             <synonyms/>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2024-09-16 10:07:45</sys_created_on>
+            <sys_created_on>2024-09-20 05:19:53</sys_created_on>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
-            <sys_mod_count>3</sys_mod_count>
+            <sys_mod_count>5</sys_mod_count>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2024-09-16 10:13:11</sys_updated_on>
-            <value>verification</value>
+            <sys_updated_on>2024-09-23 09:51:34</sys_updated_on>
+            <value>on_hold</value>
         </sys_choice>
         <sys_choice action="INSERT_OR_UPDATE">
             <dependent_value/>
             <element>status</element>
             <hint/>
             <inactive>false</inactive>
-            <label>Re assigned</label>
+            <label>Resolved</label>
             <language>en</language>
             <name>x_1318454_pmo_task</name>
-            <sequence>4</sequence>
+            <sequence>5</sequence>
             <synonyms/>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2024-09-16 10:07:59</sys_created_on>
+            <sys_created_on>2024-09-23 09:41:11</sys_created_on>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
-            <sys_mod_count>3</sys_mod_count>
+            <sys_mod_count>2</sys_mod_count>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2024-09-16 10:13:20</sys_updated_on>
-            <value>re_assigned</value>
+            <sys_updated_on>2024-09-23 09:51:53</sys_updated_on>
+            <value>resolved</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>status</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Reopen</label>
+            <language>en</language>
+            <name>x_1318454_pmo_task</name>
+            <sequence>6</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2024-09-23 09:41:33</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2024-09-23 09:52:50</sys_updated_on>
+            <value>Reopen</value>
         </sys_choice>
         <sys_choice action="INSERT_OR_UPDATE">
             <dependent_value/>
@@ -99,16 +175,35 @@
             <label>Completed</label>
             <language>en</language>
             <name>x_1318454_pmo_task</name>
-            <sequence>5</sequence>
+            <sequence>7</sequence>
             <synonyms/>
             <sys_created_by>admin</sys_created_by>
             <sys_created_on>2024-09-16 10:07:12</sys_created_on>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
-            <sys_mod_count>3</sys_mod_count>
+            <sys_mod_count>5</sys_mod_count>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2024-09-16 10:13:23</sys_updated_on>
+            <sys_updated_on>2024-09-23 09:53:03</sys_updated_on>
             <value>completed</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>status</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Closed</label>
+            <language>en</language>
+            <name>x_1318454_pmo_task</name>
+            <sequence>8</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2024-09-23 09:41:50</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2024-09-23 09:53:17</sys_updated_on>
+            <value>closed</value>
         </sys_choice>
     </sys_choice>
 </record_update>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update>
-    <sys_dictionary action="INSERT_OR_UPDATE" element="status" table="x_1318454_pmo_task">
+    <sys_dictionary action="INSERT_OR_UPDATE" element="assignee_group" table="x_1318454_pmo_task">
         <active>true</active>
         <array>false</array>
         <attributes/>
@@ -10,10 +10,10 @@
 	return '';  // return the calculated value
 
 })(current);]]></calculation>
-        <choice>3</choice>
+        <choice/>
         <choice_field/>
         <choice_table/>
-        <column_label>Status</column_label>
+        <column_label>Assignee Group</column_label>
         <comments/>
         <create_roles/>
         <default_value/>
@@ -26,39 +26,42 @@
         <dynamic_creation_script/>
         <dynamic_default_value/>
         <dynamic_ref_qual/>
-        <element>status</element>
+        <element>assignee_group</element>
         <element_reference>false</element_reference>
         <foreign_database/>
         <formula/>
         <function_definition/>
         <function_field>false</function_field>
-        <internal_type display_value="Choice">choice</internal_type>
+        <internal_type display_value="Reference">reference</internal_type>
         <mandatory>false</mandatory>
-        <max_length>40</max_length>
+        <max_length>32</max_length>
         <name>x_1318454_pmo_task</name>
         <next_element/>
         <primary>false</primary>
         <read_only>false</read_only>
         <read_roles/>
-        <reference/>
+        <reference display_value="" name="sys_user_group">sys_user_group</reference>
         <reference_cascade_rule/>
         <reference_floats>false</reference_floats>
         <reference_key/>
-        <reference_qual/>
-        <reference_qual_condition/>
+        <reference_qual>nameSTARTSWITHPMO_^nameNOT LIKEPMO_MANAGER^EQ</reference_qual>
+        <reference_qual_condition table="sys_user_group">nameSTARTSWITHPMO_^nameNOT LIKEPMO_MANAGER^EQ<item endquery="false" field="name" goto="false" newquery="false" operator="STARTSWITH" or="false" value="PMO_"/>
+            <item endquery="false" field="name" goto="false" newquery="false" operator="NOT LIKE" or="false" value="PMO_MANAGER"/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </reference_qual_condition>
         <reference_type/>
         <spell_check>false</spell_check>
         <staged>false</staged>
         <sys_class_name>sys_dictionary</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2024-09-16 09:51:35</sys_created_on>
-        <sys_name>Status</sys_name>
+        <sys_created_on>2024-09-20 05:02:26</sys_created_on>
+        <sys_name>Assignee Group</sys_name>
         <sys_package display_value="PROJECT MANAGEMENT OFFICE" source="x_1318454_pmo">53d55eabc364da10604bf9477d013119</sys_package>
         <sys_policy/>
         <sys_scope display_value="PROJECT MANAGEMENT OFFICE">53d55eabc364da10604bf9477d013119</sys_scope>
-        <sys_update_name>sys_dictionary_x_1318454_pmo_task_status</sys_update_name>
+        <sys_update_name>sys_dictionary_x_1318454_pmo_task_assignee_group</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-09-23 09:55:56</sys_updated_on>
+        <sys_updated_on>2024-09-20 07:10:56</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>

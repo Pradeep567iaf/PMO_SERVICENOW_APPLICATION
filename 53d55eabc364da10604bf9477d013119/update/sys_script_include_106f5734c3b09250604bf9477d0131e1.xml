@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>false</active>
+        <api_name>x_1318454_pmo.task_fetch_user_with_group_id</api_name>
+        <caller_access/>
+        <client_callable>true</client_callable>
+        <description/>
+        <name>task_fetch_user_with_group_id</name>
+        <script><![CDATA[var task_fetch_user_with_group_id = Class.create();
+task_fetch_user_with_group_id.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
+
+    getUserWithGroupId: function() {
+        var id = this.getParameter('sysparm_projectid');
+        var users = [];
+        var gr = new GlideRecord('sys_user_grmember');
+        gr.addQuery('group', '0c2cf66cc3b81250604bf9477d013180');
+        gr.query();
+        while (gr.next()) {
+            users.push(gr.user.sys_id.toString());
+
+        }
+        
+        return users.join(',');
+
+
+    },
+
+    type: 'task_fetch_user_with_group_id'
+});
+
+]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-09-20 07:38:26</sys_created_on>
+        <sys_id>106f5734c3b09250604bf9477d0131e1</sys_id>
+        <sys_mod_count>21</sys_mod_count>
+        <sys_name>task_fetch_user_with_group_id</sys_name>
+        <sys_package display_value="PROJECT MANAGEMENT OFFICE" source="x_1318454_pmo">53d55eabc364da10604bf9477d013119</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="PROJECT MANAGEMENT OFFICE">53d55eabc364da10604bf9477d013119</sys_scope>
+        <sys_update_name>sys_script_include_106f5734c3b09250604bf9477d0131e1</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-09-24 05:11:28</sys_updated_on>
+    </sys_script_include>
+</record_update>
